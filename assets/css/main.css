@@ -15,6 +15,49 @@
 	max-height: 50px;
 }
 
+.icon {
+	height: 40px;
+	padding-left: 28px;
+
+}
+
+#last-icon {
+	padding-right: 18px;
+}
+
+#contact h2 {
+	margin: auto;
+	text-align: center;
+}
+
+.icon2 {
+	max-height: 80px;
+	border-radius: 20%;
+}
+
+#skills-table {
+	margin-left: 20px;
+}
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -1868,7 +1911,7 @@
 		-webkit-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
-		color: #98c593;
+		color: #1F45FC;
 	}
 
 	sub {
@@ -2376,7 +2419,7 @@
 			}
 
 			.main.style3.primary {
-				background: #fff;
+				background: #FEFCFF;
 			}
 
 			.main.style3.secondary {
@@ -2946,6 +2989,11 @@
 /* Contact */
 
 	#contact {
+		background: url("images/overlay.png"), url("../../images/contact.png");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, bottom center;
+		background-repeat: repeat, no-repeat;
 		padding-bottom: 0;
 		overflow: hidden;
 	}
@@ -2961,6 +3009,7 @@
 			transform: translateZ(0);
 			position: relative;
 			bottom: 0;
+			background-color: #FEFCFF;
 		}
 
 		#contact.inactive .box {
