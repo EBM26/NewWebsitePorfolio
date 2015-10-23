@@ -8,8 +8,11 @@
 <head>
 	<title>Eyal Benmoshe - Full Stack Web Developer - Ruby on Rails</title>
 	<link rel="icon" type="image/x-icon" href="images/favicon.ico"/> 
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<meta charset="utf-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -56,7 +59,7 @@
 		<section id="one" class="main style2 right dark fullscreen">
 			<div class="content box style2">
 				<header>
-					<h2>Who I Am</h2>
+					<h2 class="text-center">Who I Am</h2>
 				</header>
 				<p>A full stack developer with a passion for code. I'm always learning new technologies and I love working with people who share the same goals and passions as me. 10 years of business have taught me the indispensable value of hard work and making sure I stand 100% behind my products.</p>
 			</div>
@@ -75,15 +78,15 @@
 				<div class="container 75% gallery">
 					<div class="row 0% images">
 						<div class="6u 12u(mobile)"><a href="images/tabularasa.jpg" class="image fit from-left"><img src="images/tabularasa.jpg" title="A list and task app built with Ruby on Rails, postgreSQL, Angular.js, and Bootstrap:  <a href='https://tabularasaeyal.herokuapp.com/'>Visit Site</a> " alt="" /></a></div>
-						<div class="6u 12u(mobile)"><a href="images/Frenchable.png" class="image fit from-right"><img src="images/Frenchable.png" title="A front end frame for an e-commerce website built with Angular.JS, Angular UI Router, and Bootsrap:  <a href='http://frenchable.s3-website-us-west-1.amazonaws.com/#/home'>Visit Site</a> " alt="" /></a></div>
+						<div class="6u 12u(mobile)"><a href="images/Frenchable.png" class="image fit from-right"><img src="images/Frenchable.png" title="A front end frame for an e-commerce website built for a client that will be connected to his API and e-commerce provider .Built with Angular.JS, Angular UI Router, and Bootsrap:  <a href='http://frenchable.s3-website-us-west-1.amazonaws.com/#/home'>Visit Site</a> " alt="" /></a></div>
 					</div>
 					<div class="row 0% images">
 						<div class="6u 12u(mobile)"><a href="images/Astro.png" class="image fit from-left"><img src="images/Astro.png" title="Created the first documented Astrology Information API. Built with Ruby or Rails, MongoDB, and Bootstrap:  <a href='http://www.astrology-api.com/'>Visit Site</a>" alt="" /></a></div>
-						<div class="6u 12u(mobile)"><a href="images/bai.png" class="image fit from-right"><img src="images/bai.png" title="App that delivers basic Astrology information by calling the Astrology API. Built with Ruby on Rails and Foundation CSS: <a href='https://baiapp.herokuapp.com/'>Visit Site</a>" alt="" /></a></div>
+						<div class="6u 12u(mobile)"><a href="images/bai.png" class="image fit from-right"><img src="images/bai.png" title="App that delivers basic Astrology information by calling the Astrology API that I built. Built with Ruby on Rails and Foundation CSS: <a href='https://baiapp.herokuapp.com/'>Visit Site</a>" alt="" /></a></div>
 					</div>
 					<div class="row 0% images">
 						<div class="6u 12u(mobile)"><a href="images/apptracker.jpg" class="image fit from-left"><img src="images/apptracker.jpg" title="App that tracks app creations from start to finish. Built with Ruby on Rails, MongoDB, and Bootstrap: <a href='https://apptrackerproject.herokuapp.com/users/new'>Visit Site</a>" alt="" /></a></div>
-						<div class="6u 12u(mobile)"><a href="images/playerpopularity.jpg" class="image fit from-right"><img src="images/playerpopularity.jpg" title="Tracking NBA players' popularity by number of Tweets received. Built with Ruby on Rails, Bootstrap, and d3 graphing: <a href='https://baiapp.herokuapp.com/'>Visit Site</a>" alt="" /></a></div>
+						<div class="6u 12u(mobile)"><a href="images/playerpopularity.jpg" class="image fit from-right"><img src="images/playerpopularity.jpg" title="App that tracks NBA players' popularity by number of daily Tweets received. Built with Ruby on Rails, Bootstrap, Pure CSS, and d3 graphing: <a href='https://baiapp.herokuapp.com/'>Visit Site</a>" alt="" /></a></div>
 					</div>
 				</div>
 
@@ -104,41 +107,42 @@
 					<!-- Contact Form -->
 
 					<h2><u>Skills</u></h2><br>
-					<table id="skills-table">
-						<tr>
-							<td><img src="images/html5.ico" alt="" class="icon2">
-								<p>HTML5</p></td>
-								<td><img src="images/css3.ico" alt="" class="icon2">
-									<p>CSS3</p></td>
-									<td><img src="images/bootstrap.jpeg" alt="" class="icon2">
-										<p>Bootstrap</p></td>
-										<td><img src="images/jscript.png" alt="" class="icon2">
-											<p>Javascript</p></td>
-										</tr>
-										<tr>
-											<td><img src="images/jquery.ico" alt="" class="icon2">
-												<p>JQuery</p></td>
-												<td><img src="images/angular.png" alt="" class="icon2">
-													<p>Angular.js</p></td>
-													<td><img src="images/RoR.jpeg" alt="" class="icon2">
-														<p>Ruby on Rails</p></td>
-														<td><img src="images/mongo.jpeg" alt="" class="icon2">
-															<p>MongoDB</p></td>
-														</tr>
-														<tr>
+					<div class="table-responsive">
+						<table id="skills-table" class="table">
+							<tr>
+								<td><img src="images/html5.ico" alt="" class="icon2">
+									<p>HTML5</p></td>
+									<td><img src="images/css3.ico" alt="" class="icon2">
+										<p>CSS3</p></td>
+										<td><img src="images/bootstrap.jpeg" alt="" class="icon2">
+											<p>Bootstrap</p></td>
+											<td><img src="images/jscript.png" alt="" class="icon2">
+												<p>Javascript</p></td>
+											</tr>
+											<tr>
+												<td><img src="images/jquery.ico" alt="" class="icon2">
+													<p>JQuery</p></td>
+													<td><img src="images/angular.png" alt="" class="icon2">
+														<p>Angular.js</p></td>
+														<td><img src="images/RoR.jpeg" alt="" class="icon2">
+															<p>Ruby on Rails</p></td>
+															<td><img src="images/mongo.jpeg" alt="" class="icon2">
+																<p>MongoDB</p></td>
+															</tr>
+															<tr>
 
-															<td><img src="images/pstsql.png" alt="" class="icon2">
-																<p>postgreSQL</p></td>
-																<td><img src="images/api.ico" alt="" class="icon2">
-																	<p>API</p></td>
-																	<td><img src="images/github.png" alt="" class="icon2">
-																		<p>Github</p></td>
-																		<td><img src="images/heroku.png" alt="" class="icon2">
-																			<p>Heroku</p></td>
+																<td><img src="images/pstsql.png" alt="" class="icon2">
+																	<p>postgreSQL</p></td>
+																	<td><img src="images/api.ico" alt="" class="icon2">
+																		<p>API</p></td>
+																		<td><img src="images/github.png" alt="" class="icon2">
+																			<p>Github</p></td>
+																			<td><img src="images/heroku.png" alt="" class="icon2">
+																				<p>Heroku</p></td>
 
-																		</tr>
-																	</table>
-
+																			</tr>
+																		</table>
+																	</div>
 																</div>
 															</section>
 

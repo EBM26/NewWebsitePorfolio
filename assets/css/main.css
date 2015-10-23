@@ -3123,12 +3123,14 @@
 			left: 0;
 			background: #fff;
 			width: 100%;
-			height: 3em;
-			line-height: 2.8em;
+			min-height: 3em;
 			text-align: center;
 			cursor: default;
 			z-index: 1;
 			font-size: 0.9em;
+			padding-left: 5%;
+			padding-right: 5%;
+			color: black;
 		}
 
 		.poptrox-popup .nav-next,
